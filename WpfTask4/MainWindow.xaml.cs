@@ -55,21 +55,35 @@ namespace WpfTask4
         }
 
         //расстояние 
+        private void ButtonDyuymy(object sender, RoutedEventArgs e)
+        {
+            const double rateDyuymy = 0.0254;
+            double rateDyuym = Convert.ToDouble(rateDyuymy);
+            double sumDyuym = Convert.ToDouble(sumDyuymy.Text);
+            double resDyuym = rateDyuym * sumDyuym;
+            resSumDyuymy.Text = resDyuym.ToString();
+        }
+
+        private void ButtonFut(object sender, RoutedEventArgs e)
+        {
+            const double rateFUT = 0.3048;
+            double sumFUT = Convert.ToDouble(sumFut.Text);
+            double resFUT = rateFUT * sumFUT;
+            resSumFut.Text = resFUT.ToString();
+        }
         private void ButtonMile(object sender, RoutedEventArgs e)
         {
-            const double rateMile = 1609.34;
-            double rateMil = Convert.ToDouble(rateMile);
+            const double rateMil = 1609.34;
             double sumMil = Convert.ToDouble(sumMile.Text);
             double resMil = rateMil * sumMil;
             resSumMile.Text = resMil.ToString();
         }
-
-        private void ButtonFud(object sender, RoutedEventArgs e)
+        private void ButtonVersty(object sender, RoutedEventArgs e)
         {
-            const double rateFUD = 0.3048;
-            double sumFUD = Convert.ToDouble(sumFud.Text);
-            double resFUD = rateFUD * sumFUD;
-            resSumFud.Text = resFUD.ToString();
+            const double rateVerst = 1066.8;
+            double sumVerst = Convert.ToDouble(sumVersty.Text);
+            double resVerst = rateVerst * sumVerst;
+            resSumVersty.Text = resVerst.ToString();
         }
     }
 }

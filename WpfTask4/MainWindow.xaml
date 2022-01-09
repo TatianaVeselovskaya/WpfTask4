@@ -104,7 +104,7 @@
             <TabItem Header="Расстояние">
 
             <UniformGrid Rows="2" Columns="2">
-                <GroupBox Header="Миля в метры" Margin="10" Padding="5" BorderBrush="Orange">
+                <GroupBox Header="Дюймы в метры" Margin="10" Padding="5" BorderBrush="Violet">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -115,15 +115,15 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                         <Label Content="Введите количество" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
-                            <TextBox x:Name="sumMile" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
-                        <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonMile"/>
+                         <Label Content="Введите дюймы" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="sumDyuymy" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
+                        <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonDyuymy"/>
                             <Label Content="Результат" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center"/>
-                            <TextBox x:Name="resSumMile" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="resSumDyuymy" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
                     </Grid>
                 </GroupBox>
 
-                <GroupBox Header="Фуд в метры" Margin="10" Padding="5" BorderBrush="Violet">
+                <GroupBox Header="Футы в метры" Margin="10" Padding="5" BorderBrush="DarkBlue">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -134,11 +134,49 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                            <Label Content="Введите количество" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
-                            <TextBox x:Name="sumFud" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
-                        <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonFud"/>
+                            <Label Content="Введите футы" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="sumFut" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
+                        <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonFut"/>
                             <Label Content="Результат" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center"/>
-                            <TextBox x:Name="resSumFud" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="resSumFut" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Header="Мили в метры" Margin="10" Padding="5" BorderBrush="Green">
+                     <Grid>
+                          <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                          </Grid.RowDefinitions>
+                          <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                          </Grid.ColumnDefinitions>
+                            <Label Content="Введите мили" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="sumMile" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
+                          <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonMile"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="resSumMile" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
+                     </Grid>
+                </GroupBox>
+
+                <GroupBox Header="Версты в метры" Margin="10" Padding="5" BorderBrush="Orange">
+                    <Grid>
+                         <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                         </Grid.RowDefinitions>
+                         <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                         </Grid.ColumnDefinitions>
+                            <Label Content="Введите версты" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="sumVersty" Grid.Row="0" Grid.Column="1" Margin="3" VerticalContentAlignment="Center"/>
+                          <Button Content="Рассчитать" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,3" Click="ButtonVersty"/>
+                            <Label Content="Результат" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="resSumVersty" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True" VerticalContentAlignment="Center"/>
                     </Grid>
                 </GroupBox>
                 </UniformGrid>
